@@ -7,7 +7,7 @@ import man from '../assets/arnav.png';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
 import TrackVisibility from 'react-on-screen';
-
+import movingman from '../assets/codeman.gif'
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -58,7 +58,7 @@ export const Banner = () => {
   return (
     <section className="banner bg-black px-4" id="home">
       <Container>
-        <Row className="aligh-items-center lg:grid lg:grid-cols-3 lg:gap-4">
+        <Row className="aligh-items-center lg:grid lg:grid-cols-3 lg:gap-4 lg:mt-20 lg:ml-20">
           <Col xs={12} md={6} xl={7} className="lg:col-span-2 side">
             <TrackVisibility>
               {({ isVisible }) =>
@@ -82,7 +82,7 @@ export const Banner = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 1 }}
                   >
-                    {`Hi! I'm Jon`}
+                    {`Hi! I'm Arnav`}
                   </motion.h1>
                   <motion.h1
                     className="text-red-50 bg-gradient-to-r from-fuchsia-600 to-fuchsia-950 bg-clip-text text-transparent"
@@ -146,7 +146,7 @@ export const Banner = () => {
                         <FaGithub size={25} />
                       </motion.a>
                       <motion.a
-                        href="mailto:your-avsingh02as02@gmail.com"
+                        href="mailto:avsingh02as02@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.2 }}
@@ -190,6 +190,7 @@ export const Banner = () => {
                 </div>
               }
             </TrackVisibility>
+            {/* <img src={movingman} /> */}
           </Col>
         </Row>
       </Container>
